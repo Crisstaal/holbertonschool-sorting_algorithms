@@ -72,7 +72,7 @@ void quick_s(int *array, int lo, int hi, size_t size)
     {
         pivot = partition(array, lo, hi, size);
         quick_s(array, lo, pivot - 1, size);
-        quick_s(array, pivot, hi, size);  // Exclude pivot from the next call
+        quick_s(array, pivot, hi, size);
     }
 }
 
