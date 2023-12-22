@@ -4,23 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define UP 0
-#define DOWN 1
-
 /**
- * enum bool - Enumeration of boolean values
- * @false: equals 0
- * @true: equals 1
- */
-
-typedef enum bool
-{
-	false = 0;
-	true
-} bool;
-
-/**
- * struct listin_s - doubly linked list
+ * struct listint_s - doubly linked list
  * @n: integer
  *
  * @prev: pointer
@@ -32,9 +17,11 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
-void print_list(const lisint_t *list);
+
+void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
+listint_t *swap_node(listint_t *node, listint_t **list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
