@@ -21,7 +21,7 @@ void insertion_sort_list(listint_t **list)
 	}
 }
 /**
- * swap_nodes - swaps two nodes
+ * swap_node - swaps two nodes
  *
  * @node: node
  * @list: node
@@ -43,5 +43,6 @@ listint_t *swap_node(listint_t *node, listint_t **list)
 		current->prev->next = current;
 	else
 		*list = current;
+
 	return (current);
 }
