@@ -20,6 +20,7 @@ typedef struct listint_s
 
 void print_list(const listint_t *list);
 void quick_sort(int *array, size_t size);
+void quick_s(int *array, int lo, int hi, size_t size);
 void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 listint_t *swap_node(listint_t *node, listint_t **list);
