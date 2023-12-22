@@ -13,10 +13,10 @@ void bubble_sort(int *array, size_t size)
 
 	if (size < 2)
 		return;
-	for (i = 0; i < size -1; i++)
-		for (index = 0; index < size - i -1; index++)
+	for (i = 0; i < size - 1; i++)
+		for (index = 0; index < size - i - 1; index++)
 		{
-			if (array[index] > array[index + 1])			
+			if (array[index] > array[index + 1])
 			{
 			tmp = array[index];
 			array[index] = array[index + 1];
