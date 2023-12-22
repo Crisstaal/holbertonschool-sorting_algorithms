@@ -51,7 +51,6 @@ int partition(int *array, int lo, int hi, size_t size)
 }
 
 /**
-/**
  * quick_s - quick sort
  * @array: array
  * @lo: lower
@@ -59,6 +58,7 @@ int partition(int *array, int lo, int hi, size_t size)
  * @size: array size
  * Return: void
  */
+
 void quick_s(int *array, int lo, int hi, size_t size)
 {
 	int pivot;
